@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatWave</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth">
+  <h1>ChatWave</h1>
+
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="signup()">Sign Up</button>
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="chat" style="display:none;">
+  <h2>ChatWave Global Chat</h2>
+
+  <div id="messages"></div>
+
+  <input type="text" id="messageInput" placeholder="Type message">
+  <button onclick="sendMessage()">Send</button>
+
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
